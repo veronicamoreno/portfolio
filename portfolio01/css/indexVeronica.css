@@ -1,0 +1,256 @@
+
+body {
+	padding: 20px;
+	font-family: "Open Sans" !important;
+}
+
+.nav-link {
+	color: #0E270D;
+	opacity: 1;
+}
+
+/*type*/
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: sans-serif;
+		font-style: normal;
+		text-align: center;
+	}
+
+	h1{
+	    font-size: 1.8rem !important;
+	}
+
+	h5{
+		color: #ff0066;	
+		font-size: 1.6rem !important;
+		font-weight: bold !important;
+	}
+
+	h6{
+		font-weight: bold !important;
+		text-decoration: underline #ff0066 !important;
+		font-family: "Amatic SC";
+		font-size: 1.6rem !important;
+	}
+
+
+	p{
+		text-align: justify;
+	}
+
+	.contact p{
+		text-align: center !important;
+		line-height: 0.7;
+		margin-top: 5px;
+	}
+
+/*Links*/
+
+.WDTools a{
+	  color: #ff0066;
+	  transition: 0.2s ease-in;
+
+}
+.WDTools a:hover {
+	  color: black; 
+	}
+.button { 
+	background-color: #ffffff;
+	border: 2px solid #ff0066;
+	color: #000000;
+	border-radius: 50px;
+	padding: 5px 10px;
+	margin: auto;
+	display: flex;
+	width: 120px;
+	height: 40px;
+  	justify-content: center;
+  	align-items: center;
+}
+.button:hover {
+	 	background-color: #ffffff;
+	 	border: 2px solid #000000;
+	  	color: #000000;
+	  	box-shadow: 0 12px 16px 0 #ac5377, 0 17px 50px 0 rgba(0,0,0,0.19);
+	  	text-decoration: none;
+	}
+
+	/*responsive with MEDIA QUERIES*/
+		@media screen and (min-width: 768px){
+
+			.WDTools a { /* Align and center the icons with padding*/
+			  display: inline-block;
+			  text-align: center;
+			  padding: 0px 20px;
+
+	}
+		}
+
+/*Images*/
+
+
+	/*Logo: reduir el tamany pq capiga a la pantalla ptita*/
+		.navbar-brand{
+			width: 60%;
+		}
+
+	/* Carousel introduction- Make the image fully responsive */
+	  .carousel-inner img {
+	      width: 100%;
+	      height: 100%;
+	  	}
+
+	/*  Carousel interest - Make the image fully responsive */
+	  #interests .carousel-inner img {
+	      width: 100%;
+	      height: 100%;
+
+	 	 }
+
+
+		 @media (min-width: 768px) { /* imatgenes en linia*/
+			.carousel-multi-item-2 .col-md-3 {
+			float: left;
+			width: 25%;
+			max-width: 100%; } 
+
+			.carousel-multi-item-2 .card img {
+			border-radius: 2px; }
+		}
+
+	/* Photos from sections*/
+	  .rounded-circle {
+		width:50%
+	  }
+	  .col-sm img{
+		width: 100%;
+	  }
+
+	/*Icons*/
+	  .WDTools i{
+	  	padding: 5px;
+	  	margin: 5px auto;
+	  }
+	  .icons img{
+	  	width: 50px !important;
+	  }
+
+	  #interests i {
+	  	color: #ff0066;
+	  }
+
+	  .contact i{
+	  	color: #ff0066;
+	  	margin: 0 5px;
+	  	
+	  }
+		
+		/*Tooltip*/  
+	   .tooltip-inner{
+	      text-align: center;
+	      border-radius: 6px;
+	      background-color: #ffffff !important;
+	      border: 2px solid #ff0066;
+	      color: #000000!important;
+	      padding: 5px 5px;
+	      font-size: 16px;
+	    }
+		.tooltip.bs-tooltip-right .arrow:before {
+		  border-right-color: transparent !important;
+		}
+		.tooltip.bs-tooltip-left .arrow:before {
+		    border-left-color: transparent !important;
+		}
+		.tooltip.bs-tooltip-bottom .arrow:before {
+		    border-bottom-color: #ff0066 !important;
+		}
+		.tooltip.bs-tooltip-top .arrow:before {
+		    border-top-color: transparent !important;
+		}
+ 
+	
+	/*responsive with MEDIA QUERIES*/
+		@media screen and (min-width: 768px){
+			.carousel-inner img {
+				width: 100%;
+				height: 55vh;
+			}
+
+			.rounded-circle {
+				width:25%
+			}
+
+			.icons img{
+
+			}
+		}
+
+	/* Google map */
+
+	.map-container-6{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		}
+	.map-container-6 iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+		}
+
+/* Borders */
+
+	.aboutMe{
+		background-color: #ffffff;
+		border: 2px solid #ff0066;
+		color: #000000;
+		border-radius: 20px;
+		padding: 10px;
+	} 
+
+	#interests {
+		background-color: #ffffff;
+		border: 2px solid #ff0066;
+		color: #000000;
+		border-radius: 20px;
+		padding: 10px;
+	}
+
+/*footer*/
+
+	footer { 
+	   position: fixed;/* Fixed on the bottom*/
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   max-height: 60px;
+	   background-color: #f8f9fa;
+	   text-align: center;  
+	}
+
+	footer ul {
+	  list-style: none;
+	}
+
+	footer li { /* Align and center the icons with padding*/
+	  display: inline-block;
+	  padding: 20px 50px 20px 5px;
+	}
+
+	footer a { /* Styled the icons*/
+	  color: #ff0066;
+	  transition: 0.2s ease-in;
+	}
+
+	footer a:hover {
+	  color: black; 
+	}
+
+
+
+
+
